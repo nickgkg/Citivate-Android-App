@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B5A90" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#317FA3" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            
+            android:id="@+id/profilePic" >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/profile"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:id="@+id/userData"
+            android:layout_toRightOf="@id/profilePic" >
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bob"
+                android:padding="10px"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:layout_gravity="right" >"
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:text="Points: 67"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:padding="10px"
+                android:layout_margin="5px"
+                android:layout_gravity="right"
+                android:textAlignment="gravity" >"
+            </TextView>
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:text="Rank: #867"
+                android:padding="10px"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_gravity="right" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/profilePic"
+            android:orientation="vertical"
+            android:background="#18CCFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:layout_width="match_parent"
+           		android:layout_height="wrap_content"
+                android:background="#1B5A90"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:padding="20dp"
+                android:layout_margin="2dp"
+                android:text="See Suggestions" />
+            <Button
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+                android:background="#1B5A90"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:padding="20dp"
+                android:layout_margin="2dp"
+                android:text="Record Image" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

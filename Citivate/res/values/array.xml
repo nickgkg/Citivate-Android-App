@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="drawer_buttons">
+        <item>Options</item>
+        <item>Leaderboard</item>
+    </array>
+
+</resources>
